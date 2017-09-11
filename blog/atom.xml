@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tiny&#39;Wo Blog</title>
+  <id>http://blog.tinywo.net</id>
+  <updated>2017-08-19T12:27:01+08:00</updated>
+  <link href="http://blog.tinywo.net"></link>
+  <author>
+    <name>Tiny&#39;Wo Blog</name>
+  </author>
+  <entry>
+    <title>简洁的静态博客构建工具 —— 纸小墨（InkPaper）</title>
+    <updated>2016-07-11T17:00:00+08:00</updated>
+    <id>tag:blog.tinywo.net,2016-07-11:/about.me.html</id>
+    <content type="html">&lt;p&gt;纸小墨（InkPaper）是一个GO语言编写的开源静态博客构建工具，可以快速搭建博客网站。它无依赖跨平台，配置简单构建快速，注重简洁易用与更优雅的排版。&lt;/p&gt;&#xA;</content>
+    <link href="http://blog.tinywo.net/about.me.html"></link>
+    <author>
+      <name>Tiny&#39;Wo</name>
+    </author>
+  </entry>
+  <entry>
+    <title>简洁的静态博客构建工具 —— 纸小墨（InkPaper）</title>
+    <updated>2016-07-11T17:00:00+08:00</updated>
+    <id>tag:blog.tinywo.net,2016-07-11:/ink-blog-tool.html</id>
+    <content type="html">&lt;p&gt;纸小墨（InkPaper）是一个GO语言编写的开源静态博客构建工具，可以快速搭建博客网站。它无依赖跨平台，配置简单构建快速，注重简洁易用与更优雅的排版。&lt;/p&gt;&#xA;</content>
+    <link href="http://blog.tinywo.net/ink-blog-tool.html"></link>
+    <author>
+      <name>Tiny&#39;Wo</name>
+    </author>
+  </entry>
+  <entry>
+    <title>第三阶段上的博客</title>
+    <updated>2016-07-11T17:00:00+08:00</updated>
+    <id>tag:blog.tinywo.net,2016-07-11:/第三阶段上的博客.html</id>
+    <content type="html">&lt;p&gt;Tiny&amp;rsquo;Wo&lt;/p&gt;&#xA;</content>
+    <link href="http://blog.tinywo.net/第三阶段上的博客.html"></link>
+    <author>
+      <name>Tiny&#39;Wo</name>
+    </author>
+  </entry>
+  <entry>
+    <title>An Elegant Static Blog Generator —— InkPaper</title>
+    <updated>2016-07-11T17:00:00+08:00</updated>
+    <id>tag:blog.tinywo.net,2016-07-11:/ink-blog-tool-en.html</id>
+    <content type="html">&lt;p&gt;InkPaper is an static blog generator developed by Golang, No dependencies, Cross platform, Easy use, Fast build, Elegant theme.&lt;/p&gt;&#xA;</content>
+    <link href="http://blog.tinywo.net/ink-blog-tool-en.html"></link>
+    <author>
+      <name>Tiny&#39;Wo</name>
+    </author>
+  </entry>
+</feed>
