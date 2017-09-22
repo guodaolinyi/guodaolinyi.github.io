@@ -22,34 +22,50 @@
     <link rel="stylesheet" href="skin/css/style.css">
     <script>
         $(function () {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#19759B', '#2EC574', '#7BAABE', '#359CAD'],
-                anchors: ['home', 'service', 'times', 'about'],
-                menu: '#fullpageMenu'
+            $('#tinywo').fullpage({
+                sectionsColor: ['#19759B', '#2EC574', '#F7EAD5', '#359CAD'],
+                anchors: ['home', 'service', 'times', 'about']
             });
         });
     </script>
     <style type="text/css">
+        .servic-content {
+            z-index: 1;
+            overflow: hidden;
+            background-size: cover;
+        }
+        .servic-content:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255,255,255,0.8);
+            z-index: -1;
+            width: 50%;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
 
+            /*margin: auto;*/
+        }
     </style>
 </head>
 <body>
 <nav class="uk-navbar top-nav">
     <div class="uk-container uk-container-center">
-        <a href=""><img src="skin/img/tinywo-studio-logo.png" class="top-logo" alt=""></a>
-        <ul id="fullpageMenu" class="uk-navbar-nav uk-hidden-small uk-float-right top-navbar-nav">
-            <li data-menuanchor="home"><a rel="nofollow" href="#home">网站首页</a></li>
-            <li data-menuanchor="service"><a rel="nofollow" href="#service">业务体系</a></li>
-            <li data-menuanchor="times"><a rel="nofollow" href="#times">大事记录</a></li>
-            <li data-menuanchor="about"><a rel="nofollow" href="#about">联系我们</a></li>
+        <a href="//www.tinywo.net"><img src="skin/img/tinywo-studio-logo.png" class="top-logo" alt=""></a>
+        <ul class="uk-navbar-nav uk-hidden-small uk-float-right top-navbar-nav">
+            <li data-menuanchor="home"><a rel="nofollow" href="#home">首页</a></li>
+            <li><a rel="nofollow" href="/blog/">Blog</a></li>
+            <li data-menuanchor="service"><a rel="nofollow" href="#service">服务</a></li>
+            <li data-menuanchor="times"><a rel="nofollow" href="#times">记大事</a></li>
+            <li data-menuanchor="about"><a rel="nofollow" href="#about">关于</a></li>
         </ul>
-        <!--
-          uk-nav uk-nav-side
-           data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}"
-         -->
     </div>
 </nav>
-<div id="fullpage">
+<div id="tinywo">
     <div class="section" id="top-banner">
         <figure class="uk-overlay">
             <div id="top-banner-bg" class="container top-banner">
@@ -88,27 +104,38 @@
 
             </div>
             <figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-
+                <!--
+                <div class="servic-content">
+                    <p>4164d6a4d6as8d4</p>
                 </div>
+                -->
             </figcaption>
         </figure>
     </div>
     <div class="section" id="time-line">
         <figure class="uk-overlay fullscreen">
-
-            <div class="times-bg page-bg">
-
-            </div>
+            <div class="times-bg page-bg"></div>
             <figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                <div class="uk-container uk-container-center">
+                    <div class="uk-slidenav-position" data-uk-slider>
+                        <div class="uk-slider-container">
+                            <ul class="uk-slider uk-grid-width-medium-1-4">
 
+                            </ul>
+                        </div>
+                        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
+                        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
+                    </div>
+                </div>
             </figcaption>
         </figure>
     </div>
     <div class="section">
         <figure class="uk-overlay fullscreen">
             <div class="about-bg page-bg">
+                <div class="uk-container uk-container-center">
 
+                </div>
             </div>
             <figcaption class="uk-container uk-container-center uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
                 <div class="footer">
@@ -119,6 +146,7 @@
                         <li><a href="/blog/atom.xml">订阅</a></li>
                     </ul>
                     <p>Copyright &copy; [ 2012 , + ∞ ) tinywo.net All rights reserved.</p>
+                    <p>陕ICP备17002027号-2</p>
                 </div>
             </figcaption>
         </figure>

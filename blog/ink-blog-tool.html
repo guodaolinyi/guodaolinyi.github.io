@@ -11,7 +11,9 @@
 <link rel="canonical" href=".http://blog.tinywo.net">
 <link rel="shortcut icon" href="./favicon.png">
 <link rel="apple-itouch-icon" href="./favicon.png">
-<link rel="stylesheet" href="./bundle/index.css">
+<link rel="stylesheet" href="..//skin/css/uikit.css">
+<script src="..//skin/js/jquery.js"></script>
+<script src="..//skin/js/uikit.js"></script>
 <script type="text/javascript">
     var timeSinceLang = {
         year: '年前',
@@ -22,6 +24,28 @@
         second: '秒前'
     };
     var root = '';
+</script>
+
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
 </script>
 
 
